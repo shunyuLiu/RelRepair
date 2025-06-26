@@ -41,7 +41,7 @@ Run retrieval first (SigRAG / SnipRAG)
 Then run the generators (SigGen / SnipGen), using similar arguments as base_gen.py:
 <pre> <code>
   python3 sig_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
-`python3 snip_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
+  python3 snip_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
 </code> </pre>
 
 
