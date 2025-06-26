@@ -23,3 +23,28 @@ openai==1.30.1
 sentence_transformers==2.6.1
 scikit-learn==1.4.2
 </code> </pre>
+
+## Plausible Patches Generation and Validation
+To run different components of RelRepair, follow the instructions below.
+### ▶️ Run the baseline generator (base_gen)
+<pre> <code>
+  python3 base_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
+</code> </pre>
+
+### ▶️ Run SigRepair and SnipRepair
+Run retrieval first (SigRAG / SnipRAG)
+<pre> <code>
+  python3 sig_rag.py
+  python3 snip_rag.py
+</code> </pre>
+
+Then run the generators (SigGen / SnipGen), using similar arguments as base_gen.py:
+<pre> <code>
+  python3 sig_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
+`python3 snip_gen.py -d ./dataset/defects4j-sf.json -bug Math-2
+</code> </pre>
+
+
+
+
+
