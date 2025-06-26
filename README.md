@@ -1,6 +1,8 @@
 # RelRepair: :  Retrieving Relevant Information to Enhance Automated Program Repair
 RelRepair is a novel Retrieval-Augmented Generation (RAG) framework that improves automated program repair by retrieving relevant information and then steering an LLM to generate higher-quality patches.
 ## Prerequisites
+<pre> <code>```bash # Example: Prerequisites Install Defects4J from https://github.com/rjust/defects4j export PATH=$PATH:"path2defects4j"/framework/bin ```</code> </pre>
+
 <details>
 numpy==1.24.3
 pandas==2.0.3
